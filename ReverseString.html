@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Reverse The String</title>
+    </head>
+    <body>
+        <h1 style="color :rgb(165, 0, 0);"> Reverse the String</h1>
+    
+        Enter the original string<br><br>
+        <input type="text" id="string"><br><br>
+
+        <button onclick="myFunction()">Result</button>
+
+        <script>
+            function myFunction()
+            {
+               
+                var s = document.getElementById("string").value;
+                var reverse='';
+                var i;
+
+                for (i = s.length - 1; i >= 0; i--)
+                 {
+                   reverse += s[i];
+                 }
+
+              alert("The Reversed string is : "+reverse);
+            }
+        </script>
+
+    </body>
+</html>
